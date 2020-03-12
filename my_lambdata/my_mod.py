@@ -14,4 +14,4 @@ def add_a_col(l, df):
     print("Converted list to series")
     l = pandas.DataFrame(l)
     print("Converted series to dataframe")
-    df = pandas.
+    df['new_col'] = l
