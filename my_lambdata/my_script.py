@@ -15,4 +15,3 @@ from my_lambdata.my_mod import add_a_col
 my_list = [4, 3, 2, 0, 1, 2]
 add_a_col(my_list, df)
 print(df)
-null
