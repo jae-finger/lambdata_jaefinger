@@ -1,5 +1,8 @@
 
 #my_lambdata/my_mod.py
 
-def order_of_mag(x):
-    return x * 10
+
+def null_test(xlist):
+    isnull = xlist.isnull().sum()
+    print("Here is a list of columns and the number of missing values:")
+    print(isnull)
