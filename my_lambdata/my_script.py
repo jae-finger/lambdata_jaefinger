@@ -12,6 +12,6 @@ null_test(df)
 
 #Utilize the add_col_to_df function
 my_list = [1, 4, 6, 3, 2, 13, 4]
-my_list = (my_list)
+my_list = pandas.Series(my_list)
 my_list = pandas.DataFrame(my_list)
 print(my_list)
