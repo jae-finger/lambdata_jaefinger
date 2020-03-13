@@ -2,7 +2,7 @@
 
 import pandas
 from my_lambdata.my_mod import null_test
-from my_lambdata.my_mod import add_col_to_df
+from my_lambdata.my_mod import add_a_col
 
 #Utilize the null_test function
 
