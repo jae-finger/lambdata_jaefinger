@@ -5,8 +5,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="lambdata-jae-finger",
-    version="1.0",
+    name="lambdata_jaefinger",
+    version="2.0",
     author="JAE Finger",
     author_email="jaefinger@gmail.com",
     description="LS DS Unit 3 Assignment 1-1",
