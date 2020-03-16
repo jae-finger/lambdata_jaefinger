@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="lambdata_jaefinger",
-    version="2.1",
+    version="3.5",
     author="JAE Finger",
     author_email="jaefinger@gmail.com",
     description="LS DS Unit 3 Assignment 1-1",
