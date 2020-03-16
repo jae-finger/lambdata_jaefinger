@@ -2,6 +2,7 @@
 import pandas
 import numpy as np
 
+
 def is_nan(m):
     """
     This is a function that returns whether a number in a list is NaN
@@ -27,8 +28,8 @@ def add_a_col(m, xdf):
     Input: m - a list of values to be added as a column to a dataframe
     Input: xdf - a dataframe to which the column will be added
     """
-    l = pandas.Series(m)
+    m = pandas.Series(m)
     print("Converted list to series")
-    l = pandas.DataFrame(m)
+    m = pandas.DataFrame(m)
     print("Converted series to dataframe")
     xdf['new_col'] = m

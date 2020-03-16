@@ -11,9 +11,10 @@ setup(
     author_email="jaefinger@gmail.com",
     description="LS DS Unit 3 Assignment 1-1",
     long_description=long_description,
-    long_description_content_type="text/markdown", # required if using a md file for long desc
-    #license="MIT",
+    long_description_content_type="text/markdown",
+    # required if using a md file for long desc
+    # license="MIT",
     url="https://github.com/jae-finger/lambdata_jaefinger",
-    #keywords="",
-    packages=find_packages() # ["my_lambdata"]
+    # keywords="",
+    packages=find_packages()  # ["my_lambdata"]
 )
