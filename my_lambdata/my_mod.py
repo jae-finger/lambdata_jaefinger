@@ -1,19 +1,22 @@
 # my_lambdata/my_mod.py
 import pandas
+import numpy as np
 
-
-def null_test(xdf):
+def is_nan(m):
     """
-    This is a function that returns the number of missing values for each
-    column in a dataframe.
+    This is a function that returns whether a number in a list is NaN
 
-    Input: xdf = a pandas DataFrame
-    Outputs: Prints a list containing a row corresponding to each column and
-    the number of missing values in each column of the dataframe.
+    Input: m = a list of numbers or NaNs
+    Outputs: Prints a list of whether each element is a number (yes) or NaN (no).
     """
-    isnull = xdf.isnull().sum()
-    print("Here is a list of columns and the number of missing values:")
-    print(isnull)
+    is_null = []
+    for x in m:
+        if x is np.NaN:
+            is_null.append('Yes')
+        else:
+            is_null.append('No')
+    print("A list of each elements and yes it is a number or no it isn't:")
+    print(is_null)
 
 
 def add_a_col(m, xdf):
