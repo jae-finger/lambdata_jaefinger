@@ -8,7 +8,8 @@ def is_nan(m):
     This is a function that returns whether a number in a list is NaN
 
     Input: m = a list of numbers or NaNs
-    Outputs: Prints a list of whether each element is a number (yes) or NaN (no).
+    Outputs: Prints a list of whether each element is a number (yes)
+    or NaN (no).
     """
     is_null = []
     for x in m:
