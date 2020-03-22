@@ -8,12 +8,20 @@ pip install -i https://test.pypi.org/simple/ lambdata-jaefinger
 
 ## Usage
 There are two helper functions available:
-1. `is_nan()` :
+1. `is_nan(a_list)` :
 Returns whether each element is a number (yes) or not (no).
 ```python
 from my_lambdata.my_mod import is_nan
 my_list = [4, 3, 2, 0, np.NaN, 2, 4]
 is_nan(my_list)
+```
+
+Alernatively, there is an object-oriented version of this located in `oop_refactored_script.py`.
+There, you can utilize the `Nullfinder()` class to perform a similar method (`.findnulls`).
+```python
+test_list = [4, 3, 2, 0, np.NaN, 2, 4]
+nullf = NullFinder(test_list)
+nullf.findnulls()
 ```
 
 2. `add_a_col()`:

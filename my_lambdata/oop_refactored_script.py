@@ -1,3 +1,4 @@
+# my_lambdata/oop_ refactored_script.py
 # Refactored script code with OOP approach
 
 import pandas as pd
@@ -15,10 +16,11 @@ class NullFinder():
                 is_null.append('Yes')
             else:
                 is_null.append('No')
-        print(is_null)
+        return is_null
 
-
-test_list = [4, 3, 2, 0, np.NaN, 2, 4]
-nullf = NullFinder(test_list)
-
-nullf.findnulls()
+if __name__ == '__main__':
+    test_list = [4, 2, 0, np.NaN, 2, 4]
+    nullf = NullFinder(test_list)
+    print(nullf.findnulls())
+    nulls = nullf.findnulls()
+    print(nulls[0])
